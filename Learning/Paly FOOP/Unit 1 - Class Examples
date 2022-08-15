@@ -1,0 +1,41 @@
+# Create a flag challenge program - created by Christopher Bell - modified from Art Simon
+import turtle
+
+# create a new turtle object called tia
+tia = turtle.Turtle() 
+# make tia's initial shape a turtle, look up what other shape turtles can be
+tia.shape("turtle") 
+# initialize tia's draw speed to be 10
+tia.speed(20)
+
+# fill the background green using begin_fill() and end_fill()
+tia.color('white')
+tia.begin_fill()
+tia.goto(200,100)
+tia.goto(200,-100)
+tia.goto(-200,-100)
+tia.goto(-200,100)
+tia.goto(200,100)
+tia.end_fill()
+# make tia go back home
+tia.home()
+# change tia's color to blue
+tia.color('cyan')
+# make a circle - note where the circle starts - where is the center?
+tia.begin_fill()
+tia.circle(50)
+tia.end_fill()
+# what other shapes can you draw with?
+
+# where could I move and draw another circle to make it look like a doughnut? How about a cresent moon?
+
+# display some text
+tia.color('black')
+tia.penup()
+# why am I picking the pen up? What would happen if I didn't?
+tia.goto(0, -90)
+tia.pendown()
+tia.write("I'm tia, what are the coordinates of the center?", align="center", font=(None, 16, "bold"))
+tia.hideturtle()
+turtle.done()
+print("'hello world")
