@@ -6,15 +6,12 @@ tia = turtle.Turtle()
 # make tia's initial shape a turtle, look up what other shape turtles can be
 tia.shape("turtle") 
 # initialize tia's draw speed to be 10
-tia.speed(20)
 tia.speed(5)
 
 # fill the background green using begin_fill() and end_fill()
 tia.color('blue')
 tia.begin_fill()
 tia.goto(200,100)
-tia.goto(100,-100)
-tia.goto(-100,-100)
 tia.goto(50,-100)
 tia.goto(-10,-100)
 tia.goto(-100,100)
@@ -22,7 +19,6 @@ tia.goto(200,100)
 tia.end_fill()
 tia.penup()
 # make tia go back home
-tia.goto(100,120)
 tia.goto(50,10)
 # change tia's color to blue
 tia.color('cyan')
