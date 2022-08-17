@@ -19,9 +19,9 @@ tia.goto(200,100)
 tia.end_fill()
 tia.penup()
 # make tia go back home
-tia.goto(50,10)
+tia.goto(40,-15)
 # change tia's color to blue
-tia.color('cyan')
+tia.color('yellow')
 tia.pendown()
 # make a circle - note where the circle starts - where is the center?
 tia.begin_fill()
