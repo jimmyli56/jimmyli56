@@ -1,2 +1,4 @@
-pwease awoo = 49
-pwint(awoo)
+pwint("Hewwo Wowrld")
+# pwease awoo = 49
+# pwint(awoo)
+
