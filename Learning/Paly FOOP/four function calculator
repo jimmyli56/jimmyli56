@@ -1,0 +1,51 @@
+#this is an example of tkinter using a grid layout - used and modified from: https://www.askpython.com/python-modules/tkinter/python-tkinter-grid-example
+import tkinter as tk
+from PIL import Image, ImageTk
+ 
+def calc_1(*args):
+  try:
+    value = float(e1.get())
+    value = round((value * (9/5) + 32), 2)
+    print(value)
+  except ValueError:
+    pass
+
+
+# Create the master object
+window = tk.Tk()
+window.title("Grid Example")
+ 
+# Create the label objects and pack them using grid
+# notice that (0,0) is in the top left corner
+tk.Label(window, text="Label 1").grid(row=0, column=0)
+tk.Label(window, text="Label 2").grid(row=1, column=0)
+ 
+# Create the entry objects 
+e1 = tk.Entry(window)
+e2 = tk.Entry(window)
+ 
+e1.grid(row=0, column=1)
+e2.grid(row=1, column=1)
+
+# Create the button
+# note the command, columnspan, so it ends up in the middle of columns 0 and 1
+button1 = tk.Button(window, text="Button 1", command = calc_1)
+button1.grid(columnspan=2, row=2, column=0)
+
+# Create another button
+button2 = tk.Button(window, text="Button 2")
+button2.grid(columnspan=2, row=2, column=2)
+
+# Create the PIL image object
+image = Image.open("MrBellCoke.jpg")
+image=image.resize((130,75))
+photo = ImageTk.PhotoImage(image)
+ 
+# Create an image label
+img_label = tk.Label(image=photo)
+img_label.image = photo
+ 
+img_label.grid(rowspan = 2, row=0, column=2)
+ 
+# The mainloop
+tk.mainloop()
