@@ -1,0 +1,11 @@
+# random number guesser
+
+import random
+
+print("Welcome to the random number guesser!")
+print("I'm thinking of a number between 1 and 100.")
+print("You have 10 tries to guess it.")
+print("Good luck!")
+print()
+
+number = random.randint(1, 100)
