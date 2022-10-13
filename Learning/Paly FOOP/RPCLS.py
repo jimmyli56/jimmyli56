@@ -31,7 +31,7 @@ def number_to_name(number):
         return "Error: Invalid number"
 
 def rpsls(player_choice):
-    """Plays rock-paper-scissors-lizard-Spock"""
+    # Plays the game using the functions above
     print()
     print("Player chooses", player_choice)
     player_number = name_to_number(player_choice)
