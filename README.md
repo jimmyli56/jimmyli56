@@ -6,4 +6,4 @@ Pronouns are He/Him.
 
 ### Visitor counter
 
-![:name](https://count.getloli.com/get/@:wokipokei)
+![:name](https://count.getloli.com/get/@:test)
