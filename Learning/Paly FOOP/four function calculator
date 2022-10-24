@@ -102,14 +102,16 @@ class Calculator(Frame):
         self.display.insert(END, "/")
     
     def equal(self):
-        self.display.clear(END, "=")
-        self.display.insert(END, eval(self.display.get()))
+        var = eval(self.display.get())
+        self.display.delete(0,END)
+        self.display.insert(END, var)
+        
     
     def clear(self):
         self.display.delete(0, END)
 
 root = Tk()
 root.title("Calculator")
-root.geometry("200x200")
+root.geometry("300x180")
 app = Calculator(root)
 root.mainloop()
