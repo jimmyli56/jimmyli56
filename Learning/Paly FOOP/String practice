@@ -1,0 +1,13 @@
+"""""firstName = input("What is your first name? \n")
+lastName = input("What is your last name? \n")"""
+
+"""print("Hello, " + firstName[0].upper() + firstName[1:] + " " + lastName[0].upper() + lastName[1:] +"!")
+dir("ddd")"""
+
+def bestCharsCount(string):
+    count = 0
+    for a in sent.lower():
+        if(a =='c' or a =='b'):
+            count += 1
+    return count
+bestCharsCount(input("Enter a sentence: "))
