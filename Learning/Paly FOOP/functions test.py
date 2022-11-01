@@ -1,4 +1,15 @@
-name = input("What is your name? ")
-if(len(name)>5):
-    print("Your name is longer than 5 characters.")
-    
+# test = "This_is_a_test"
+
+# final = test.split("_")
+# spaced = " ".join(final)
+# print(final)
+# print(spaced)
+
+
+letters = ['a','b','c']
+
+delete_head(letters)
+
+del letters[0]
+
+print(letters)
