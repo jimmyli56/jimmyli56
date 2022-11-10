@@ -8,17 +8,19 @@ def draw_polygon(some_turtle, sides, size):
         some_turtle.right(360/sides)
 
 
-def draw_pinwheel(some_turtle, sides, size):
-    """Draws a pinwheel with the given number of sides and size"""
+def draw_pinwheel(some_turtle, sides):
+    """Draws a pinwheel with the given number of sides"""
     for i in range(sides):
-        draw_polygon(some_turtle, 3, size)
+        some_turtle.forward(100)
+        some_turtle.backward(70)
         some_turtle.right(360/sides)
 
-def draw_asterisk(some_turtle, size):
-    """Draws an asterisk with the given size"""
-    for i in range(5):
-        some_turtle.forward(size)
-        some_turtle.right(144)
+def draw_asterisk(some_turtle, sides):
+    """Draws an asterisk with the given number of sides"""
+    for i in range(sides):
+        some_turtle.forward(100)
+        some_turtle.backward(100)
+        some_turtle.right(360/sides)
 
 def main():
     """Main function"""
@@ -40,12 +42,11 @@ if mode_selector == "1":
     turtle.done()
 elif mode_selector == "2":
     sides = int(input("Enter the number of sides: "))
-    size = int(input("Enter the size of each side: "))
-    draw_pinwheel(turtle, sides, size)
+    draw_pinwheel(turtle, sides)
     turtle.done()
 elif mode_selector == "3":
-    size = int(input("Enter the size of each side: "))
-    draw_asterisk(turtle, size)
+    sides = int(input("Enter the number of sides: "))
+    draw_asterisk(turtle,sides)
     turtle.done()
 else:
     print("Invalid input")
