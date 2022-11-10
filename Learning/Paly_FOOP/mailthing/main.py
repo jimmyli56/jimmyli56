@@ -1,4 +1,4 @@
-mail = open('mail.txt')
+mail = open("mail.txt")
 counter = 0 
 for line in mail:
     counter += 1

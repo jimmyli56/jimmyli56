@@ -7,6 +7,7 @@ def draw_polygon(some_turtle, sides, size):
         some_turtle.forward(size)
         some_turtle.right(360/sides)
 
+
 def draw_pinwheel(some_turtle, sides, size):
     """Draws a pinwheel with the given number of sides and size"""
     for i in range(sides):
@@ -36,18 +37,19 @@ if mode_selector == "1":
     sides = int(input("Enter the number of sides: "))
     size = int(input("Enter the size of each side: "))
     draw_polygon(turtle, sides, size)
+    turtle.done()
 elif mode_selector == "2":
     sides = int(input("Enter the number of sides: "))
     size = int(input("Enter the size of each side: "))
     draw_pinwheel(turtle, sides, size)
+    turtle.done()
 elif mode_selector == "3":
     size = int(input("Enter the size of each side: "))
     draw_asterisk(turtle, size)
+    turtle.done()
 else:
     print("Invalid input")
 
-    # wait for the user to close the window
-    turdle.done()
-    window.exitonclick()
+    
 
 
