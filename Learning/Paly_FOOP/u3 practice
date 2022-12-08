@@ -1,3 +1,0 @@
-input = "testing"
-length = len(input)
-
