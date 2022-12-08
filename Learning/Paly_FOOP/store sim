@@ -37,7 +37,7 @@ while True:
   if (response == '1'):
     printItems()
     #ask the user for a line number
-    
+    line = int(input("Which item was sold?\n"))
     #ask the user for how many items were sold
     
     #call the function to update
