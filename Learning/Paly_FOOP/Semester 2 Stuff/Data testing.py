@@ -1,5 +1,6 @@
 sum = 0
-data = [308,301,305,309,322,331,333,349,336,338,364,377,400,422,447,483,512,535,524,577]
+#data = [308,301,305,309,322,331,333,349,336,338,364,377,400,422,447,483,512,535,524,577]
+data = [4, 4, 3, 4, 3, 4, 4, 2, 0, 1]
 for i in data:
     sum += i
 data.sort()
@@ -12,6 +13,12 @@ def varience(data):
     for i in data:
         sum += (i-mean)**2
     return round(sum/len(data),2)
+
+def covarience(data,data2):
+    sum = 0
+    for i in range(len(data)):
+        sum += (data[i]-mean)*(data2[i]-mean)
+    return round(sum/len(data),2)#
 
 standard_deviation = round(varience(data)**0.5,2)
 
