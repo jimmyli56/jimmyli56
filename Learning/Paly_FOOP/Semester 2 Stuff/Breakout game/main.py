@@ -30,7 +30,7 @@ for i in range(7):
     all_bricks.add(bricks)
     pass
 
-#add another row of bricks
+# add another row of bricks
 for i in range(7):
     bricks = brick.Brick(PERIWINKLE, 80, 30)
     bricks.setxy(60 + i * 100, 100)
@@ -38,6 +38,19 @@ for i in range(7):
     all_bricks.add(bricks)
     pass
 
+for i in range(7):
+    bricks = brick.Brick(PERIWINKLE, 80, 30)
+    bricks.setxy(60 + i * 100, 140)
+    all_sprites_list.add(bricks)
+    all_bricks.add(bricks)
+    pass
+
+for i in range(7):
+    bricks = brick.Brick(PERIWINKLE, 80, 30)
+    bricks.setxy(60 + i * 100, 180)
+    all_sprites_list.add(bricks)
+    all_bricks.add(bricks)
+    pass
 
 #add paddles and ball to screen
 paddle1 = paddle.Paddle(WHITE, 100, 10)
@@ -63,10 +76,10 @@ while playing:
 
   keys = pygame.key.get_pressed()
   if keys[pygame.K_LEFT]:
-    paddle1.left(5)
+    paddle1.left(10)
   #now right or you can use other keys too 
   if keys[pygame.K_RIGHT]:
-    paddle1.right(5)
+    paddle1.right(10)
   all_sprites_list.update()
   
   #bounce off sides
@@ -74,13 +87,28 @@ while playing:
     ball1.velocity[1] = -ball1.velocity[1]
     #went below paddle
     lives -= 1
-    pygame.time.wait(3000)
+    pygame.time.wait(2000)
     ball1.setxy(400, 540)
-    
+  
+  #wall bounce
+  if ball1.rect.x>790:
+    ball1.velocity[0] = -ball1.velocity[0]
+  if ball1.rect.x<0:
+    ball1.velocity[0] = -ball1.velocity[0]
+  #ceiling bounce
+  if ball1.rect.y<40:
+    ball1.velocity[1] = -ball1.velocity[1]
+
+  
+  #paddle limits
+  if paddle1.rect.x<0:
+    paddle1.rect.x=0
+  if paddle1.rect.x>700:
+    paddle1.rect.x=700
 
   if pygame.sprite.collide_mask(ball1, paddle1):
     #depending on how bounce is made, update accordingly
-    ball.rect.x -= ball.velocity[0]
+    ball1.rect.x -= ball1.velocity[0]
     ball1.bounce()
   
   brick_collision_list = pygame.sprite.spritecollide(ball1, all_bricks, False)
@@ -102,6 +130,9 @@ while playing:
   text = pygame.font.Font(None, 34).render("Lives: " + str(lives), 1, WHITE)
   screen.blit(text, (650,10))
 
+#kill game if no lives left
+  if lives == 0:
+    playing = False
 
   all_sprites_list.draw(screen)
 
