@@ -131,8 +131,8 @@ while playing:
   screen.blit(text, (650,10))
 
 #kill game if no lives left
-  if lives == 0:
-    playing = False
+  # if lives == 0:
+  #   playing = False
 
   all_sprites_list.draw(screen)
 
