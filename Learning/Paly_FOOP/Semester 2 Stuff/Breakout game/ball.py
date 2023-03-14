@@ -9,9 +9,9 @@ class Ball(pygame.sprite.Sprite):
         self.image.fill(BLACK)
         self.image.set_colorkey(BLACK)
 
-        pygame.draw.rect(self.image, color, [0, 0, width, height])
+        pygame.draw.rect(self.image, color, [0, 0, width, height]) 
 
-        self.velocity = [3, 3]
+        self.velocity = [3, 3] #pixels per frame
 
         self.rect = self.image.get_rect()
 
@@ -20,7 +20,7 @@ class Ball(pygame.sprite.Sprite):
         self.rect.y = y
         
     def move(self):
-        self.rect.y += self.velocity[1]    
+         self.rect.y += self.velocity[1]    
 
     def update(self):
         self.rect.x += self.velocity[0]
@@ -28,7 +28,7 @@ class Ball(pygame.sprite.Sprite):
 
     def bounce(self):
         self.velocity[1] = -self.velocity[1]
-        self.velocity[0] = random.randrange(-8, 8)
+        self.velocity[0] = random.randint(-3, 3)
 
     def reset_pos(self):
         self.rect.x = 345
