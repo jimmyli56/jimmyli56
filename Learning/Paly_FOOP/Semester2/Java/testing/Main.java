@@ -28,3 +28,10 @@ class Main {
     return (temp/1.1);
   }
 }
+
+
+/** this is a test */
+/** @author - Jimmy */
+/** @version - 1 */
+/** @param temperatures in c of f */
+/** @return temperatures in f or c */
