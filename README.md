@@ -4,3 +4,5 @@ I am Jimmy Li, a student learning coding and persuing a Data Science major in th
 
 Currently at Cañada College
 Pronouns are He/Him.
+
+https://count.getloli.com/get/@wkpighr?theme=moebooru
