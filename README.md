@@ -1,8 +1,6 @@
 ### Hi there 👋
 
-I am Jimmy Li, a student learning coding and persuing a Data Science major in the (not so distant) future.
-
-Currently at Cañada College
+I am Jimmy Li, a student learning coding on the side, currently persuing an Anthropology major.
 
 Pronouns are He/Him or They/Them
 
