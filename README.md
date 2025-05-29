@@ -6,4 +6,4 @@ Pronouns are He/Him or They/Them
 
 ### Visitor counter
 
-![:name](https://count.getloli.com/@Wokipokei Github?name=Wokipokei+Github&theme=booru-touhoulat&padding=7&offset=0&align=top&scale=1&pixelated=0&darkmode=auto&num=6280)
+![:name](https://count.getloli.com/@:Wokipokei-Github)
