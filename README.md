@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-I am Jimmy Li, a student learning coding on the side, currently pursuing an Anthropology major.
+I am Jimmy Li, a student learning programming, Photography, and IT/Cybersecurity on the side, currently pursuing an Anthropology major.
 
 Pronouns are He/Him or They/Them
 
