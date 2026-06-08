@@ -1,8 +1,8 @@
 ### Hi there 👋
 
-I am Jimmy Li, a student learning programming, Photography, and IT/Cybersecurity on the side, currently pursuing an Anthropology major.
+Hi, I’m Jimmy Li. I’m an anthropology student exploring programming, creative technology, digital media, and the ways people use technology to build communities.
 
-Pronouns are He/Him or They/Them
+Pronouns: he/him or they/them
 
 ### Visitor counter
 
